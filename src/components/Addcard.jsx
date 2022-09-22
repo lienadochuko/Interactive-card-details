@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import cardf from '../images/card-logo.svg';
 import InputMask from 'react-input-mask';
 import './Addcard.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Addcard = () => {
     let nav = useNavigate();
@@ -14,7 +14,6 @@ const Addcard = () => {
         cv:""
     };
 
-    const FREE = [/[0-9]/,/\d/,/\d/,/\d/,/\d/," ",/\d/,/\d/,/\d/,/\d/," ",/\d/,/\d/,/\d/,/\d/," ",/\d/,/\d/,/\d/,/\d/];
     const [formValues, setFormValues] = useState(initvalue);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setisSubmit] = useState(false);
@@ -32,12 +31,14 @@ const Addcard = () => {
 
     useEffect(() => {
         console.log(formErrors);
+        setFormValues(initvalue);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             console.log(formValues);
             (nav('/success', {state: formValues}))
         }
-    }, [formErrors])
-
+    }, 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [formErrors])
 
     const myf = JSON.stringify(formValues.cardnumber);
     const myf1 = JSON.stringify(formValues.cardname).toUpperCase();

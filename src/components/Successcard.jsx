@@ -1,5 +1,4 @@
 import React from 'react';
-import InputMask from 'react-input-mask';
 import { useLocation, useNavigate } from 'react-router-dom';
 import cardf from '../images/card-logo.svg';
 import cardgood from '../images/icon-complete.svg'
@@ -13,6 +12,7 @@ const Successcard = () => {
         (nav('/'))
     };
   
+
   const location = useLocation();
   console.log(location);
 
