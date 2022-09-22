@@ -1,11 +1,17 @@
 import React from 'react';
 import InputMask from 'react-input-mask';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import cardf from '../images/card-logo.svg';
 import cardgood from '../images/icon-complete.svg'
 import './Addcard.css';
 
 const Successcard = () => {
+    let nav = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        (nav('/'))
+    };
   
   const location = useLocation();
   console.log(location);
@@ -36,7 +42,7 @@ const Successcard = () => {
          <img src={cardgood} alt="success" className='logo2' />
          <p className='tank'>THANK YOU!</p>
          <p className='tank2'>We've added your card details</p>
-         <button className='butt1'> Continue</button>
+         <button className='butt1' onClick={handleSubmit}> Continue</button>
          </div>
       </div>
   </div>
