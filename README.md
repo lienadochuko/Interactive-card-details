@@ -15,8 +15,8 @@ Table of contents
   
   ![active - state desktop](https://user-images.githubusercontent.com/66309753/191801828-63e527d9-7331-497a-a957-3feca155e842.png)
 
-  ![mobile active - state 2](https://user-images.githubusercontent.com/66309753/191801888-68fdc723-1bab-4f07-bf01-377cdf48a545.png)
-
+![active - state mobile](https://user-images.githubusercontent.com/66309753/191804357-161936ed-f027-4fd2-8687-27f3be29fa4c.png)
+  
 ![completed-state desktop](https://user-images.githubusercontent.com/66309753/191801940-5359dcf9-6d3e-4a25-8e23-b3e85365a880.png)
 
 ![completed-state mobile](https://user-images.githubusercontent.com/66309753/191803045-cbd7ee80-63df-4825-8e14-71c2c05ccea7.png)
