@@ -427,6 +427,7 @@ label{
         width: 320px;
         height: 45px;
         margin-left: 20px;
+        font-size: 18px; 
     }
 
     input{
